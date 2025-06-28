@@ -66,7 +66,6 @@ const Experience = () => {
         <div className="md:hidden relative space-y-8">
           {" "}
           <div className="absolute left-4 h-full w-0.5 bg-gradient-to-b from-violet-600 to-cyan-400 transform -translate-x-1/2"></div>
-          {/* Experience 1 Card */}
           <div className="relative">
             {" "}
             <div className="absolute left-4 w-4 h-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 transform -translate-x-1/2 top-1/2 -translate-y-1/2 z-10"></div>
