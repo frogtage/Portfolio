@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useLanguage } from "../context/LanguageContext";
-import { Github, Linkedin } from "lucide-react"; // or use your own icons
+import { Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const { text } = useLanguage();

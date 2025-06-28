@@ -62,12 +62,16 @@ const Experience = () => {
         </h2>
         <p className="text-lg text-gray-400">{text.experienceSubtitle}</p>
       </div>
-
       <div className="max-w-3xl mx-auto">
-        <div className="md:hidden space-y-8">
-          <div className="relative pl-8">
-            <div className="absolute left-0 w-4 h-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 transform -translate-x-1/2 top-1"></div>
-            <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
+        <div className="md:hidden relative space-y-8">
+          {" "}
+          <div className="absolute left-4 h-full w-0.5 bg-gradient-to-b from-violet-600 to-cyan-400 transform -translate-x-1/2"></div>
+          {/* Experience 1 Card */}
+          <div className="relative">
+            {" "}
+            <div className="absolute left-4 w-4 h-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 transform -translate-x-1/2 top-1/2 -translate-y-1/2 z-10"></div>
+            <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 ml-8">
+              {" "}
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
                 <span className="text-sm font-medium text-cyan-400">
@@ -80,10 +84,11 @@ const Experience = () => {
               <p className="text-gray-300">{text.exp1Desc}</p>
             </div>
           </div>
-
-          <div className="relative pl-8">
-            <div className="absolute left-0 w-4 h-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 transform -translate-x-1/2 top-1"></div>
-            <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
+          <div className="relative">
+            {" "}
+            <div className="absolute left-4 w-4 h-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 transform -translate-x-1/2 top-1/2 -translate-y-1/2 z-10"></div>
+            <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 ml-8">
+              {" "}
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-2 h-2 rounded-full bg-violet-500"></div>
                 <span className="text-sm font-medium text-violet-500">
