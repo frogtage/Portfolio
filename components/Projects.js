@@ -11,30 +11,36 @@ const Projects = () => {
     {
       title: text.projectsWordPressTitle || "SilisPaytakht.ir",
       subtitle: text.projectsWordPressSubtitle || "Business WordPress Website",
-      description: text.projectsWordPressDesc || "Developed a complete, responsive website for a local business, customizing themes and plugins.",
+      description:
+        text.projectsWordPressDesc ||
+        "Developed a complete, responsive website for a local business, customizing themes and plugins.",
       linkText: text.viewLiveSite || "View Live Site",
-      link: "#",
+      link: "https://silispaytakht.ir/",
       tags: ["WordPress", "PHP", "CSS"],
-      image: "/Wordpress.jpg"
+      image: "/Wordpress.jpg",
     },
     {
       title: text.projectsPythonTitle || "Python Scripts",
       subtitle: text.projectsPythonSubtitle || "Data Scraping & Analysis",
-      description: text.projectsPythonDesc || "Python scripts using Requests, Beautiful Soup, and Pandas to scrape web data and perform analysis.",
+      description:
+        text.projectsPythonDesc ||
+        "Python scripts using Requests, Beautiful Soup, and Pandas to scrape web data and perform analysis.",
       linkText: text.viewOnGithub || "View on GitHub",
-      link: "#",
+      link: "https://github.com/frogtage?tab=repositories",
       tags: ["Python", "Pandas", "Beautiful Soup"],
-      image: "/programming.jpg"
+      image: "/programming.jpg",
     },
     {
       title: text.projectsPortfolioTitle || "Personal Portfolio",
       subtitle: text.projectsPortfolioSubtitle || "The very site you're on!",
-      description: text.projectsPortfolioDesc || "Built with modern CSS and interactive JavaScript for a unique feel.",
-      linkText: text.viewOnGithub || "View on GitHub",
-      link: "#",
+      description:
+        text.projectsPortfolioDesc ||
+        "Built with modern CSS and interactive JavaScript for a unique feel.",
+      linkText: text.viewOnGithub || "View on Vercel",
+      link: "https://ml-project-website-eight.vercel.app/",
       tags: ["Next.js", "Tailwind", "React"],
-      image: "/ml-project.jpg"
-    }
+      image: "/ml-project.jpg",
+    },
   ];
 
   return (
