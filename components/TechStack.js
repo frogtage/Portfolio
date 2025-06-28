@@ -36,8 +36,6 @@ const useIntersectionObserver = (options) => {
 
   return [observer, setElements, entries];
 };
-
-// Animated section component
 const AnimatedSection = ({
   children,
   className,
@@ -72,23 +70,56 @@ const TechStack = () => {
   const { text } = useLanguage();
 
   const technologies = [
-    // Frontend
-    { name: "React", icon: <FaReact className="w-5 h-5 text-[#61DAFB]" />, group: "frontend" },
-    { name: "Next.js", icon: <SiNextdotjs className="w-5 h-5 text-white" />, group: "frontend" },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="w-5 h-5 text-[#38B2AC]" />, group: "frontend" },
-
-    // Python Ecosystem
-    { name: "Python", icon: <FaPython className="w-5 h-5 text-[#3776AB]" />, group: "python" },
-    { name: "PostgreSQL", icon: <SiPostgresql className="w-5 h-5 text-[#336791]" />, group: "python" },
-    { name: "Numpy", icon: <SiNumpy className="w-5 h-5 text-[#4D77CF]" />, group: "python" },
-    { name: "Pandas", icon: <SiPandas className="w-5 h-5 text-[#150458]" />, group: "python" },
-    { name: "Matplotlib", icon: <FaChartBar className="w-5 h-5 text-indigo-400" />, group: "python" },
-    { name: "Scikit-learn", icon: <SiScikitlearn className="w-5 h-5 text-[#F7931E]" />, group: "python" }
+    {
+      name: "React",
+      icon: <FaReact className="w-5 h-5 text-[#61DAFB]" />,
+      group: "frontend",
+    },
+    {
+      name: "Next.js",
+      icon: <SiNextdotjs className="w-5 h-5 text-white" />,
+      group: "frontend",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss className="w-5 h-5 text-[#38B2AC]" />,
+      group: "frontend",
+    },
+    {
+      name: "Python",
+      icon: <FaPython className="w-5 h-5 text-[#3776AB]" />,
+      group: "python",
+    },
+    {
+      name: "PostgreSQL",
+      icon: <SiPostgresql className="w-5 h-5 text-[#336791]" />,
+      group: "python",
+    },
+    {
+      name: "Numpy",
+      icon: <SiNumpy className="w-5 h-5 text-[#4D77CF]" />,
+      group: "python",
+    },
+    {
+      name: "Pandas",
+      icon: <SiPandas className="w-5 h-5 text-[#150458]" />,
+      group: "python",
+    },
+    {
+      name: "Matplotlib",
+      icon: <FaChartBar className="w-5 h-5 text-indigo-400" />,
+      group: "python",
+    },
+    {
+      name: "Scikit-learn",
+      icon: <SiScikitlearn className="w-5 h-5 text-[#F7931E]" />,
+      group: "python",
+    },
   ];
 
   const groupColors = {
     frontend: "hover:border-blue-400",
-    python: "hover:border-yellow-400"
+    python: "hover:border-yellow-400",
   };
 
   return (
@@ -117,7 +148,9 @@ const TechStack = () => {
               <span className="group-hover:scale-110 transition-transform">
                 {tech.icon}
               </span>
-              <span className="text-sm text-white font-medium">{tech.name}</span>
+              <span className="text-sm text-white font-medium">
+                {tech.name}
+              </span>
             </div>
           ))}
         </div>

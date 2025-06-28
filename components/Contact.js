@@ -40,10 +40,13 @@ const Contact = () => {
           method="POST"
           className="space-y-6"
         >
-          {/* Hidden inputs for FormSubmit config */}
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="box" />
-          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yourwebsite.com/thank-you"
+          />
 
           <div className="space-y-2">
             <label

@@ -52,18 +52,18 @@ const Experience = () => {
   const { text } = useLanguage();
 
   return (
-    <AnimatedSection id="experience" className="py-16 md:py-20 container mx-auto px-4">
+    <AnimatedSection
+      id="experience"
+      className="py-16 md:py-20 container mx-auto px-4"
+    >
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-white mb-2">
           {text.experienceTitle}
         </h2>
-        <p className="text-lg text-gray-400">
-          {text.experienceSubtitle}
-        </p>
+        <p className="text-lg text-gray-400">{text.experienceSubtitle}</p>
       </div>
 
       <div className="max-w-3xl mx-auto">
-        {/* Mobile Timeline (simple vertical) */}
         <div className="md:hidden space-y-8">
           <div className="relative pl-8">
             <div className="absolute left-0 w-4 h-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 transform -translate-x-1/2 top-1"></div>
@@ -77,9 +77,7 @@ const Experience = () => {
               <h3 className="text-xl font-bold text-white mb-2">
                 {text.exp1Title}
               </h3>
-              <p className="text-gray-300">
-                {text.exp1Desc}
-              </p>
+              <p className="text-gray-300">{text.exp1Desc}</p>
             </div>
           </div>
 
@@ -95,17 +93,11 @@ const Experience = () => {
               <h3 className="text-xl font-bold text-white mb-1">
                 {text.exp2Title}
               </h3>
-              <p className="text-sm text-gray-400 mb-2">
-                {text.exp2Org}
-              </p>
-              <p className="text-gray-300">
-                {text.exp2Desc}
-              </p>
+              <p className="text-sm text-gray-400 mb-2">{text.exp2Org}</p>
+              <p className="text-gray-300">{text.exp2Desc}</p>
             </div>
           </div>
         </div>
-
-        {/* Desktop Timeline (alternating) */}
         <div className="hidden md:block relative">
           <div className="absolute left-1/2 h-full w-0.5 bg-gradient-to-b from-violet-600 to-cyan-400 transform -translate-x-1/2"></div>
           <div className="space-y-8">
@@ -122,9 +114,7 @@ const Experience = () => {
                 <h3 className="text-xl font-bold text-white mb-2">
                   {text.exp1Title}
                 </h3>
-                <p className="text-gray-300">
-                  {text.exp1Desc}
-                </p>
+                <p className="text-gray-300">{text.exp1Desc}</p>
               </div>
             </div>
 
@@ -141,12 +131,8 @@ const Experience = () => {
                 <h3 className="text-xl font-bold text-white mb-1">
                   {text.exp2Title}
                 </h3>
-                <p className="text-sm text-gray-400 mb-2">
-                  {text.exp2Org}
-                </p>
-                <p className="text-gray-300">
-                  {text.exp2Desc}
-                </p>
+                <p className="text-sm text-gray-400 mb-2">{text.exp2Org}</p>
+                <p className="text-gray-300">{text.exp2Desc}</p>
               </div>
             </div>
           </div>
