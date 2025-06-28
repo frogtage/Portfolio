@@ -36,7 +36,7 @@ const Projects = () => {
       description:
         text.projectsPortfolioDesc ||
         "Built with modern CSS and interactive JavaScript for a unique feel.",
-      linkText: text.viewOnGithub || "View on Vercel",
+      linkText: text.viewOnVercel || "View on Vercel",
       link: "https://ml-project-website-eight.vercel.app/",
       tags: ["Next.js", "Tailwind", "React"],
       image: "/ml-project.jpg",
